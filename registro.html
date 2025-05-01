@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrarse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="eventos.html">Eventos</a>
+    <a href="registro.html">Registro</a>
+  </nav>
+
+  <h1>Formulario de registro para conferencias</h1>
+  <form id="registroForm">
+    <label>Nombre completo:
+      <input type="text" id="nombre" required>
+    </label>
+    <br>
+    <label>Correo institucional:
+      <input type="email" id="correo" required>
+    </label>
+    <br>
+    <label>Carrera:
+      <input type="text" id="carrera" required>
+    </label>
+    <br>
+    <br>
+    <br>
+    <div class="form-group">
+        <label>Conferencias a las que desea asistir:</label>
+        <div class="checkboxes">
+          <label><input type="checkbox" name="conferencias" value="github" /> Uso de GitHub</label>
+          <label><input type="checkbox" name="conferencias" value="docker" /> Introducción a Docker</label>
+          <label><input type="checkbox" name="conferencias" value="linux" /> Configuración de servidores Linux</label>
+        </div>
+    </div>
+
+    <button type="submit">Registrarse</button>
+    <p id="mensaje"></p>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+<footer>
+    <p>Página hecha por Dereck Castillo</p>
+</footer>
+</html>
